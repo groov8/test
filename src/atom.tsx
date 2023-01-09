@@ -6,10 +6,10 @@ export const todo = atom<Todo[]>({
     default: [],
 });
 
-export const filter = atom<Filter[]>({
+export const filter = atom<Filter>({
     key: 'filter',
-    default: [{
+    default: {
         state: 'all',
-        term: ''
-    }]
+        term: '',
+    }
 });
